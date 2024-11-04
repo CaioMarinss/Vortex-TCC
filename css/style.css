@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#intro {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Opacidade inicial */
+    transition: opacity 1s; /* Transição de opacidade */
+}
+
+body{
+    background-color: #000000;
+}
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 50px;
+    color: white;
+}
+
+
