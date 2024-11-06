@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="./imgs/logoQuadrada.jpg" type="image/x-icon">
     <!-- lib de animação -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaQuery.css">
@@ -20,9 +20,8 @@
     </div>
 
     <!-- /////////////////////////////// -->
-    <header id="home">
-
-        <main>
+    <main>
+        <header id="home">
             <!-- primeiro bloco do -->
             <section id="apresentacao">
                 <div class="text">
@@ -32,18 +31,33 @@
                 </div>
                 <img src="./imgs/alunosPB.JPEG" alt="Alunos em aula" id="alunosPB">
             </section>
-    </header>
+            <nav>
+                <img src="./imgs/logoRetangularRemovedBG.png" alt="">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="./html/projetoSocial.html">Projeto Social</a></li>
+                    <li><a href="./html/loja.html">Loja</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-    <section id="sec2">
-        <nav>
-            <img src="./imgs/logoRetangularRemovedBG.png" alt="">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="./html/projetoSocial.html">Projeto Social</a></li>
-                <li><a href="./html/loja.html">Loja</a></li>
-            </ul>
-        </nav>
-    </section>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
     </main>
     <!-- mapa -->
     <section id="mapa">
@@ -54,15 +68,8 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <section id="mapa">
-        <div class="mapBox">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.467576383763!2d-46.6105524!3d-23.4796622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66a4e7aa0d9%3A0xcada0fe85b183416!2sR.%20Domingos%20Calheiros%2C%20126%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002303-100!5e0!3m2!1spt-BR!2sbr!4v1730900957135!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
