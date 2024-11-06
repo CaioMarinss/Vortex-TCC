@@ -112,7 +112,21 @@ nav {
     z-index: 98;
     animation: slideInRight 1.5s 2s;
 }
-
+#mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapBox{
+    width: 70vw;
+    height: 40vh;
+    background-color: #000;
+    margin: 10vh auto;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
 a{
     text-decoration: none;
 }
