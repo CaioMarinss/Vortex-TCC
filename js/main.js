@@ -1,6 +1,5 @@
-window.onload = function() {
+window.onload = function () {
     const intro = document.getElementById('intro');
-    const content = document.getElementById('content');
 
     setTimeout(() => {
         intro.style.opacity = '0';
@@ -9,6 +8,14 @@ window.onload = function() {
     // esconde a introdução e mostra o conteúdo
     setTimeout(() => {
         intro.style.display = 'none';
-        content.style.display = 'block';
+
     }, 3000); // 3 segundos para permitir a animação de 1 segundo
 };
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 50) {  // Se a rolagem for maior que 50px
+        navbar.classList.add('scrolled'); // Adiciona a classe para mudar a cor
+    } else {
+        navbar.classList.remove('scrolled'); // Remove a classe quando voltar ao topo
+    }
+});
