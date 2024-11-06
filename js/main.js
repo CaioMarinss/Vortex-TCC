@@ -11,3 +11,4 @@ window.onload = function () {
 
     }, 3000); // 3 segundos para permitir a animação de 1 segundo
 };
+
