@@ -5,22 +5,61 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --amareloJJ: #F2CC0F;
     --bgAlmeida: #000;
     --bgSombra: #8d8c8c;
 }
 
+/* trilho */
+::-webkit-scrollbar-track {
+    background: #5b5a5a;
+}
 
+/* thumb, parte que arrasta) */
+::-webkit-scrollbar-thumb {
+    background-color: #181818;
+}
 
 /* 
 root
 ///
 aplicação
 */
-
+.sec2{
+    height: 100vw;
+}
 body {
     overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.58) ;
+    z-index: 99;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        
+        li{
+            text-decoration: none;
+            margin: 0 2vw;
+            a{
+                color: white;
+            }
+        }
+    }
+    img{
+        height: 50px;
+        transform: translateX(50%);
+    }
 }
 
 #apresentacao {
@@ -37,7 +76,8 @@ body {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%232F2F2F"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>');
     background-repeat: no-repeat;
     color: white;
-    }   
+}
+
 .text {
     align-self: end;
     margin-bottom: 15vh;
@@ -45,7 +85,7 @@ body {
 
     p {
         font-size: 2rem;
-        color:var(--bgSombra);
+        color: var(--bgSombra);
         animation: fadeInDown 1.5s 2s;
     }
 
@@ -69,8 +109,12 @@ body {
     max-height: 95vh;
     filter: drop-shadow(1px 1px 25px var(--bgSombra));
     object-fit: cover;
-    z-index: 999;
+    z-index: 98;
     animation: slideInRight 1.5s 2s;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* introdução */
@@ -83,7 +127,7 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
     /* Opacidade inicial */
     transition: opacity 1s;
     /* Transição de opacidade */
