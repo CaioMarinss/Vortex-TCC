@@ -16,21 +16,21 @@
 <body>
     <main>
         <div id="intro">
-        <img src="./imgs/logoQuadrada.jpg" alt="logo" style="width: 200px;">
-    </div>
+            <img src="./imgs/logoQuadrada.jpg" alt="logo" style="width: 200px;">
+        </div>
         <header id="home">
             <!-- primeiro bloco do -->
-            <section id="apresentacao">
+            <section id="apresentacao" class="grid-2">
                 <div class="text">
                     <p>Pronto para mudar sua vida?</p>
                     <h1>Almeida <span>JJ</span></h1>
-                    <p>"Seja tão forte que nada possa perturbar a paz da sua mente."<br> -Carlos Gracie</p>
+                    <p>"Seja tão forte que nada possa perturbar a paz da sua mente."<br> - Carlos Gracie</p>
                 </div>
                 <img src="./imgs/alunosPB.JPEG" alt="Alunos em aula" id="alunosPB">
             </section>
         </header>
         <!-- nav -->
-        <nav>
+        <nav class="grid-2">
             <img src="./imgs/logoRetangularRemovedBG.png" alt="">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -40,35 +40,31 @@
         </nav>
         <!-- segunda sessão -->
         <section>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+            <!-- marquee, fazendo manualmente pois a tag está obsoleta -->
+            <div class="marquee">
+                <span>Disciplina</span>
+                <span>Saúde</span>
+                <span>Amizade</span>
+                <span>Autoconhecimento</span>
+                <span>Coordenação motora</span>
             </div>
         </section>
-        <!-- mapa -->
-        <section id="mapa">
+
+    </main>
+    <footer class="grid-2">
+
+        <section id="horarios">
+            <p>teste   </p>
+        </section>
+
             <div class="mapBox">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.467576383763!2d-46.6105524!3d-23.4796622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66a4e7aa0d9%3A0xcada0fe85b183416!2sR.%20Domingos%20Calheiros%2C%20126%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002303-100!5e0!3m2!1spt-BR!2sbr!4v1730900957135!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
-    </main>
-    
-    
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
