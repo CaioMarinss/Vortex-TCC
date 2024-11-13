@@ -67,29 +67,49 @@ nav {
 
 /* marquee */
 .marquee {
-    display: flex;
-    background: #000;
+    width: 90%;
+    /* max-width: ; */
+    margin-inline: auto;
+    position: relative;
+    height: 7vh;
     overflow: hidden;
-    
+
     span {
+        width: 20%;
+        height: 100%;
+        left: 100%;
+        position: absolute;
+        animation: marqueeLeft 10s linear infinite;
         font-size: 50px;
         text-transform: uppercase;
-        color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: var(--amareloJJ);
-        white-space: nowrap;
-        padding: 0 5rem;
-        animation: marqueeR 6s linear infinite;
+
+        .item1 {
+            animation-delay: calc(10s /5 * (8 - 1) * - 1);
+        }
+        .item2 {
+            animation-delay: calc(10s /5 * (8 - 2) * - 1);
+        }
+        .item3 {
+            animation-delay: calc(10s /5 * (8 - 3) * - 1);
+        }
+        .item4 {
+            animation-delay: calc(10s /5 * (8 - 4) * - 1);
+        }
+        .item5 {
+            animation-delay: calc(10s /5 * (8 - 5) * - 1);
+        }
+        /* https://www.youtube.com/watch?v=Reu0hHbis5w */
     }
 }
-@keyframes marqueeR{
-    0%{
-            transform: translateX(0);
-    }
-    100%{
-            transform: translateX(-100%);
+
+@keyframes marqueeLeft {
+
+    to {
+        left: -20%;
+        /* esconde o elemento qnd termina */
     }
 }
+
 /* primeira tela */
 #apresentacao {
     grid-template-rows: 93vh;
@@ -138,11 +158,6 @@ nav {
     object-fit: cover;
     z-index: 98;
     animation: slideInRight 1.5s 2s;
-}
-
-.swiper {
-    width: 600px;
-    height: 300px;
 }
 
 .mapBox {
