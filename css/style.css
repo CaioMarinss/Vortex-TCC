@@ -50,13 +50,13 @@ aplicação
 .text {
     align-self: end;
     margin-bottom: 15vh;
-    
+
     p {
         font-size: 1.5rem;
         color: var(--bgSombra);
         animation: fadeInDown 1.5s 2s;
     }
-    
+
     h1 {
         font-size: 8vw;
         white-space: nowrap;
@@ -64,7 +64,7 @@ aplicação
         color: white;
         font-family: "El Messiri", sans-serif;
         animation: backInLeft 1.5s 2s;
-        
+
         span {
             color: var(--amareloJJ);
         }
@@ -77,8 +77,9 @@ aplicação
     object-fit: cover;
     z-index: 98;
     animation: slideInRight 1.5s 2s;
-    
+
 }
+
 /* ======================= */
 
 /* nav */
@@ -88,153 +89,247 @@ nav {
     top: 0;
     z-index: 99;
     background-color: rgba(0, 0, 0);
-    
+
     img {
+        height: 6vh;
         justify-self: left;
         margin-left: 2vw;
     }
+
     ul {
         display: flex;
         align-items: center;
         justify-content: space-around;
         list-style: none;
+
         li {
             text-decoration: none;
             margin: 0 1vw;
+
             :hover {
                 color: var(--amareloJJ);
             }
+
             a {
                 color: white;
             }
         }
     }
-    img {
-        height: 6vh;
-    }    
-}    
+}
 
 /* ======================= */
 
 /* marquee */
-#marquee{
+#marquee {
     display: flex;
     justify-content: center;
     margin: 5vh auto;
 }
+
 .marqueeText {
     overflow: hidden;
     gap: 4.8rem;
-    width: 90%;
-    
+    width: 80%;
+
     p {
         padding: 1rem 2.5rem;
     }
+
     .marquee-track {
         font-size: 1.5rem;
         animation: marqueeLeft 15s linear infinite;
         width: max-content;
         display: flex;
     }
+
     .marquee-track:hover {
-            animation-play-state: paused;
-            cursor: context-menu;
-        }
+        animation-play-state: paused;
+        cursor: context-menu;
+    }
 }
+
 @keyframes marqueeLeft {
     to {
         transform: translateX(-50%);
     }
 }
+
 /* ======================= */
 
 /* section beneficios */
 #beneficios {
 
-        display: grid;
-        width: 70vw;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(3, 1fr);
-        grid-template-areas:
-            'h2 h2'
-            "item2 item1"
-            "item3 item4"
-            "item6 item5"
-        ;    
-        gap: 5vh 25px;
-        margin: 0 auto 5vh;
-        align-items: center;
-        
-        .item-projeto {
-            overflow: hidden;
-            margin: 10% auto 0;
-            filter: drop-shadow(1px 1px 10px var(--bgAlmeida));
-            img {            
-                border-radius: 1rem;
-                max-width: 250px;
-                max-height: 250px;
-                object-fit: cover;
-            }    
-    
-        }    
-    
-        .item-texto {
-            padding: 5%;
-            margin: 0 auto;
-            text-align: center;
-            
-        }    
-        /* posicao de grid */
-        #item1 { grid-area: item1; }
-        #txt1 { grid-area: item2; }
-        #item2 { grid-area: item3; }
-        #txt2 { grid-area: item4; }
-        #item3 { grid-area: item5; }
-        #txt3 { grid-area: item6; }
-        
-        h2 {
-            font-size: 4vw;
-            grid-column: 1/3;
-            grid-area: h2;
-            margin: 0 auto;
-        }    
-    
-        p {
-            margin: 2vh auto;
-            font-size: 20px;
-        }    
+    display: grid;
+    width: 70vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(3, 1fr);
+    grid-template-areas:
+        'h2 h2'
+        "item2 item1"
+        "item3 item4"
+        "item6 item5"
+    ;
+    gap: 5vh 25px;
+    margin: 0 auto 5vh;
+    align-items: center;
 
-    }    
+    .item-projeto {
+        overflow: hidden;
+        margin: auto 0;
+        text-align: center;
 
-/* ======================= */    
+        img {
+            border-radius: 1rem;
+            width: 60%;
+            max-width: 100%;
+            object-fit: cover;
+        }
 
-/* google maps */
-.mapBox {
+    }
+
+    .item-texto {
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+    }
+
+    /* posicao de grid */
+    #item1 {
+        grid-area: item1;
+    }
+
+    #txt1 {
+        grid-area: item2;
+    }
+
+    #item2 {
+        grid-area: item3;
+    }
+
+    #txt2 {
+        grid-area: item4;
+    }
+
+    #item3 {
+        grid-area: item5;
+    }
+
+    #txt3 {
+        grid-area: item6;
+    }
+
+    h2 {
+        font-size: 4vw;
+        grid-column: 1/3;
+        grid-area: h2;
+        margin: 0 auto;
+    }
+
+    p {
+        margin: 2vh auto;
+        font-size: 20px;
+    }
+
+}
+
+/* ======================= */
+
+/* footer */
+
+
+/* section horarios */
+
+footer {
+    background-color: var(--bgAlmeida);
+    color: white;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.btn-hover:hover {
+    filter: drop-shadow(1px 1px 30px var(--amareloJJ));
+    transition: transform .2s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#horarios {
     width: 90%;
     height: 90%;
+    gap: 20px;
+
+    /* primeiro bloco do grid footer */
+    #bloco1 {
+        text-align: center;
+
+        button {
+            width: 60px;
+            background-color: var(--amareloJJ);
+            border-radius: 50%;
+            padding: 5px;
+            margin: 5% 2%;
+        }
+
+
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    /* segundo bloco do grid footer */
+    #bloco2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            color: var(--amareloJJ);
+            font-size: 2.5rem;
+        }
+
+        #agendamento {
+            padding: 4%;
+            margin: 5% 2%;
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            border-radius: 30px;
+            width: 60%;
+            background-color: var(--amareloJJ);
+            text-transform: uppercase;
+            a {
+                color: var(--bgAlmeida);
+            }
+        }
+    }
+}
+
+/* google maps */
+#mapBox {
+    width: 90%;
+    height: 80%;
     background-color: #000;
     margin: 10vh auto;
-    
+
     iframe {
         border-radius: .5rem;
         width: 100%;
         height: 100%;
-        background: #000;
-    }    
-}    
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+        &:hover {
+            filter: none;
+        }
+    }
+
+}
 
 a {
     text-decoration: none;
-}    
-/* ======================= */
-
-/* footer */
-footer{
-    background-color: var(--bgAlmeida);
-    color: white;
 }
-
-
 
 /* ======================= */
 
@@ -254,6 +349,7 @@ footer{
     transition: opacity 1s;
     /* Transição de opacidade */
 }
+
 /* ======================= */
 
 /*classes em comum*/
@@ -261,28 +357,36 @@ footer{
 /* grid 2 colunas sem gap e sem alinhamento */
 .grid-2 {
     display: grid;
-    grid-template-columns: repeat(2, 48vw);
+    grid-template-columns: repeat(2, 48%);
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
-.fadeoutHorizontal{
-    mask-image: linear-gradient(
-        to right,
-        rgba(0,0,0,0),
-        rgba(0,0,0,1) 40%,
-        rgba(0,0,0,1) 60%,
-        rgba(0,0,0,0) 100%
-        );
-    }
-    
-.slideLeftScroll{
-    animation: slideInLeft;
-            animation-timeline: view();
-            animation-range: cover -50vh cover 50%;
+.fadeoutHorizontal {
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 40%,
+            rgba(0, 0, 0, 1) 60%,
+            rgba(0, 0, 0, 0) 100%);
 }
-.slideRightScroll{
+
+.fadeSmoothH {
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 1) 90%,
+            rgba(0, 0, 0, 0) 100%);
+}
+
+.slideLeftScroll {
+    animation: slideInLeft;
+    animation-timeline: view();
+    animation-range: cover -50vh cover 50%;
+}
+
+.slideRightScroll {
     animation: slideInRight;
-            animation-timeline: view();
-            animation-range: cover -50vh cover 50%;
+    animation-timeline: view();
+    animation-range: cover -50vh cover 50%;
 }
