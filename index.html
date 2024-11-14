@@ -21,27 +21,28 @@
         <header id="home">
             <!-- primeiro bloco do -->
             <section id="apresentacao" class="grid-2">
-                <div class="text">
+                <div class="text fadeoutVertical">
                     <p>Pronto para mudar sua vida?</p>
                     <h1>Almeida <span>JJ</span></h1>
                     <p>"Seja tão forte que nada possa perturbar a paz da sua mente."<br> - Carlos Gracie</p>
                 </div>
-                <img src="./imgs/alunosPB.JPEG" alt="Alunos em aula" id="alunosPB">
+                <img src="./imgs/alunosPB.JPEG" alt="Alunos em aula" id="alunosPB" class="fadeoutHorizontal">
             </section>
         </header>
         <!-- nav -->
         <nav class="grid-2">
-            <img src="./imgs/logoRetangularRemovedBG.png" alt="">
+            <a href="#home"><img src="./imgs/logoRetangularRemovedBG.png" alt="Logo"></a>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="./html/projetoSocial.html">Projeto Social</a></li>
+                <!-- Um “projeto social” só funciona quando se torna um “projeto de vida -->
                 <li><a href="#quemSomos">Quem somos</a></li>
             </ul>
         </nav>
         <!-- segunda sessão -->
-        <section>
+        <section id="marquee">
             <!-- marquee, fazendo manualmente pois a tag está obsoleta -->
-            <div class="marquee">
+            <div class="marqueeText fadeoutHorizontal">
                 <div class="marquee-track">
                     <p>Disciplina</p>
                     <p>Saúde</p>
@@ -49,29 +50,65 @@
                     <p>Autoconhecimento</p>
                     <p>Coordenação motora</p>
                     <p>Consciência corporal</p>
-                    <p aria-hidden="true" >Disciplina</p>
-                    <p aria-hidden="true" >Saúde</p>
-                    <p aria-hidden="true" >Amizade</p>
-                    <p aria-hidden="true" >Autoconhecimento</p>
-                    <p aria-hidden="true" >Coordenação motora</p>
-                    <p aria-hidden="true" >Consciência corporal</p>
+                    <p aria-hidden="true">Disciplina</p>
+                    <p aria-hidden="true">Saúde</p>
+                    <p aria-hidden="true">Amizade</p>
+                    <p aria-hidden="true">Autoconhecimento</p>
+                    <p aria-hidden="true">Coordenação motora</p>
+                    <p aria-hidden="true">Consciência corporal</p>
                 </div>
             </div>
         </section>
 
+        <section id="beneficios">
+
+            <h2>Benefícios</h2>
+            <!-- primeira linha do grid -->
+            <div class="item-projeto slideLeftScroll" id="item1">
+                <img src="./imgs/jiuIsLife.jpg" alt="foto do projeto">
+            </div>
+            <div class="item-texto slideRightScroll" id="txt1">
+                <h3>Por que o Jiu Jitsu?</h3>
+                <p>Se destaca muito por conta da autodefesa, 
+                mas se que percebam é trabalhado: Liderança, confiança, autoestima, disciplina, resiliência.</p>
+            </div>
+
+            <!-- segunda linha do grid -->
+            <div class="item-projeto slideRightScroll" id="item2">
+                <img src="./imgs/perseveranca.jpg" alt="foto do projeto">
+            </div>
+
+            <div class="item-texto slideLeftScroll" id="txt2">
+                <h3>Resiliêcia</h3>
+                <p>O Jiu-Jitsu ensina como lidar com qualquer adversidade e como fortalecer sua mente para superar qualquer situação.</p>
+            </div>
+
+            <!-- terceira linha do grid -->
+            <div class="item-projeto slideLeftScroll" id="item3">
+                <img src="./imgs/fotoKimura.jpg" alt="foto do projeto">
+            </div>
+            <div class="item-texto slideRightScroll" id="txt3">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iste nemo ipsam ex consequatur repudiandae vero corrupti fugiat. Voluptate minima soluta earum quasi fugit. Mollitia quis laudantium ipsum vero voluptatum?</p>
+            </div>
+
+        </section>
+
+        <!-- parallax -->
+        
     </main>
     <footer class="grid-2">
 
         <section id="horarios">
-            <p>teste   </p>
+            <p>teste </p>
         </section>
 
-            <div class="mapBox">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.467576383763!2d-46.6105524!3d-23.4796622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66a4e7aa0d9%3A0xcada0fe85b183416!2sR.%20Domingos%20Calheiros%2C%20126%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002303-100!5e0!3m2!1spt-BR!2sbr!4v1730900957135!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="mapBox">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.467576383763!2d-46.6105524!3d-23.4796622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66a4e7aa0d9%3A0xcada0fe85b183416!2sR.%20Domingos%20Calheiros%2C%20126%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002303-100!5e0!3m2!1spt-BR!2sbr!4v1730900957135!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </footer>
 
 
