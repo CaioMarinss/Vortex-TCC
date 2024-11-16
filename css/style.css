@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Host Grotesk", sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -81,6 +81,9 @@ aplicação
 }
 
 /* ======================= */
+span {
+    color: var(--amareloJJ);
+}
 
 /* nav */
 nav {
@@ -160,7 +163,7 @@ nav {
 #beneficios {
 
     display: grid;
-    width: 70vw;
+    width: 80vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto repeat(3, 1fr);
     grid-template-areas:
@@ -180,7 +183,7 @@ nav {
 
         img {
             border-radius: 1rem;
-            width: 60%;
+            height: 65%;
             max-width: 100%;
             object-fit: cover;
         }
@@ -190,7 +193,7 @@ nav {
     .item-texto {
         margin: 0 auto;
         text-align: center;
-        width: 60%;
+        width: 70%;
     }
 
     /* posicao de grid */
@@ -225,15 +228,39 @@ nav {
         margin: 0 auto;
     }
 
+    h3 {
+        font-size: 3vw;
+    }
+
     p {
         margin: 2vh auto;
-        font-size: 20px;
+        font-size: 1.4vw;
     }
 
 }
 
 /* ======================= */
+/* parallax */
+.parallax {
+    display: flex;
+    align-items: center;
+    background-image: url('../imgs/parallax.jpg');
+    height: 55vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    span {
+        text-align: center;
+        width: 100%;
+        font-size: 2vw;
+        font-weight: 900;
+        filter: drop-shadow(1px 1px 20px var(--amareloJJ));
+    }
+}
+
+/* ======================= */
 /* footer */
 
 
@@ -286,22 +313,25 @@ footer {
 
         h2 {
             color: var(--amareloJJ);
-            font-size: 2.5rem;
+            font-size: 2vw;
         }
 
-        #agendamento {
-            padding: 4%;
-            margin: 5% 2%;
-            font-size: 1rem;
-            font-weight: 900;
-            letter-spacing: 2px;
-            border-radius: 30px;
-            width: 60%;
-            background-color: var(--amareloJJ);
-            text-transform: uppercase;
-            a {
-                color: var(--bgAlmeida);
-            }
+
+    }
+
+    #agendamento {
+        padding: 4%;
+        margin: 5% 2%;
+        font-size: 1rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        border-radius: 30px;
+        width: 80%;
+        background-color: var(--amareloJJ);
+        text-transform: uppercase;
+
+        a {
+            color: var(--bgAlmeida);
         }
     }
 }
@@ -320,6 +350,7 @@ footer {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
         filter: gray;
+
         &:hover {
             filter: none;
         }
