@@ -156,12 +156,9 @@ nav {
         transform: translateX(-50%);
     }
 }
-
 /* ======================= */
-
 /* section beneficios */
 #beneficios {
-
     display: grid;
     width: 80vw;
     grid-template-columns: repeat(2, 1fr);
@@ -262,9 +259,6 @@ nav {
 
 /* ======================= */
 /* footer */
-
-
-/* section horarios */
 
 footer {
     background-color: var(--bgAlmeida);
