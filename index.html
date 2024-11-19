@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    
+
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaQuery.css">
@@ -66,8 +66,13 @@
         <!-- Quem somos -->
         <section id="quemSomos">
             <h2>Quem somos?</h2>
-            
-            <p></p>
+            <div class="quemSomosText">
+                <p>A equipe que mais cresce em São Paulo tem o compromisso em te ajudar a alcançar os seus objetivos
+                    como esportista, mas principalmente como pessoa. Corpo e mente saudável, fica muito mais fácil de
+                    contornar todas as adversidades do dia a dia. Ambiente configurado para receber você e toda sua
+                    família com treinos específico para todos os níveis e todas as idades a partir de 6 anos. Marque uma
+                    aula experimental gratuita, e conheça essa arte marcial maravilhosa que muda vidas!</p>
+            </div>
         </section>
 
         <!-- beneficios -->
@@ -76,7 +81,7 @@
             <h2>Benefícios</h2>
             <!-- primeira linha do grid -->
             <div class="item-projeto slideLeftScroll" id="item1">
-                <img src="./imgs/jiuIsLife.png"  alt="foto do projeto">
+                <img src="./imgs/jiuIsLife.png" alt="foto do projeto">
             </div>
             <div class="item-texto slideRightScroll" id="txt1">
                 <h3>Por que o <span>Jiu-Jitsu</span>?</h3>
@@ -88,7 +93,7 @@
 
             <!-- segunda linha do grid -->
             <div class="item-projeto slideRightScroll" id="item2">
-                <img src="./imgs/perseveranca.png"  alt="foto do projeto">
+                <img src="./imgs/perseveranca.png" alt="foto do projeto">
             </div>
 
             <div class="item-texto slideLeftScroll" id="txt2">
@@ -111,6 +116,10 @@
                 <p>O Jiu-Jitsu proporciona essas oportunidades constantemente. A oportunidade de ser melhor!</p>
             </div>
 
+        </section>
+
+        <section id="galeria">
+            <!-- galeria de fotos -->
         </section>
 
         <!-- parallax -->
@@ -168,7 +177,7 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        
+
     </footer>
 
 
@@ -177,19 +186,20 @@
     <!-- js -->
     <script src="./js/main.js"></script>
     <!-- acessibilidade -->
-    <script src="https://cdn.jsdelivr.net/gh/PrabothCharith/accessibility-plugin@main/accessibility-menu.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/PrabothCharith/accessibility-plugin@main/accessibility-menu.min.js"></script>
 
-        <!-- vlibras  -->
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
-            </div>
-          </div>
-          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-          <script>
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-          </script>
+    <!-- vlibras  -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>

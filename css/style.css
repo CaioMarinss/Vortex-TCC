@@ -30,7 +30,7 @@ root
 aplicação
 */
 
-h2{
+h2 {
     font-size: 4vw;
     text-align: center;
 }
@@ -123,6 +123,7 @@ nav {
         }
     }
 }
+
 /* ======================= */
 
 /* Quem somos */
@@ -164,7 +165,23 @@ nav {
         transform: translateX(-50%);
     }
 }
+
 /* ======================= */
+/* section quem somos */
+#quemSomos {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quemSomosText {
+    text-align: center;
+    width: 70%; 
+}
+
+/* ======================= */
+
 /* section beneficios */
 #beneficios {
     display: grid;
@@ -177,7 +194,7 @@ nav {
         "item3 item4"
         "item6 item5"
     ;
-    margin: 0 auto 5vh;
+    margin: 10% auto 5vh;
     align-items: center;
 
     .item-projeto {
@@ -187,13 +204,14 @@ nav {
         display: flex;
         align-items: center;
         height: 95%;
+
         img {
             position: relative;
             height: 90%;
             max-width: 100%;
             object-fit: cover;
             margin: 0 auto;
-        }    
+        }
     }
 
     .item-texto {
@@ -238,18 +256,18 @@ nav {
         font-size: 3vw;
     }
 
-    p {
-        margin: 2vh auto;
-        font-size: 1.4vw;
-    }
-
+    
 }
 
+p {
+    margin: 2vh auto;
+    font-size: 1.4vw;
+}
 /* ======================= */
 /* parallax */
 .parallax {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 65vh;
@@ -259,6 +277,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     span {
         display: flex;
         justify-content: center;
@@ -342,7 +361,7 @@ footer {
             color: var(--bgAlmeida);
         }
     }
-    
+
 }
 
 /* google maps */
