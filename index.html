@@ -16,7 +16,7 @@
 <body>
     <main>
         <div id="intro">
-            <img src="./imgs/logoQuadrada.jpg" alt="logo" style="width: 200px;">
+            <img src="./imgs/logoQuadradaRemovedBg.png" alt="logo" style="width: 200px;">
         </div>
         <header id="home">
             <!-- primeiro bloco do -->
@@ -34,14 +34,17 @@
             <img src="./imgs/logoRetangularRemovedBG.png" alt="Logo">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="./html/projetoSocial.html">Projeto Social</a></li>
-                <!-- Um “projeto social” só funciona quando se torna um “projeto de vida -->
                 <li><a href="#quemSomos">Quem somos</a></li>
+                <!-- Um “projeto social” só funciona quando se torna um “projeto de vida -->
+                <li><a href="./html/projetoSocial.html">Projeto Social</a></li>
             </ul>
         </nav>
-        <!-- segunda sessão -->
+        <section id="quemSomos">
+            <h2>Quem somos?</h2>
+            <p></p>
+        </section>
+        <!-- Marquee -->
         <section id="marquee">
-            <!-- marquee, fazendo manualmente pois a tag está obsoleta -->
             <div class="marqueeText fadeoutHorizontal">
                 <div class="marquee-track">
                     <p>Disciplina</p>
@@ -68,7 +71,7 @@
             <h2>Benefícios</h2>
             <!-- primeira linha do grid -->
             <div class="item-projeto slideLeftScroll" id="item1">
-                <img src="./imgs/jiuIsLife.jpg" class="fadeSmoothH" alt="foto do projeto">
+                <img src="./imgs/jiuIsLife.jpg"  alt="foto do projeto">
             </div>
             <div class="item-texto slideRightScroll" id="txt1">
                 <h3>Por que o <span>Jiu-Jitsu</span>?</h3>
@@ -80,7 +83,7 @@
 
             <!-- segunda linha do grid -->
             <div class="item-projeto slideRightScroll" id="item2">
-                <img src="./imgs/perseveranca.jpg" class="fadeSmoothH" alt="foto do projeto">
+                <img src="./imgs/perseveranca.jpg"  alt="foto do projeto">
             </div>
 
             <div class="item-texto slideLeftScroll" id="txt2">
@@ -93,7 +96,7 @@
 
             <!-- terceira linha do grid -->
             <div class="item-projeto slideLeftScroll" id="item3">
-                <img src="./imgs/fotoKimura.jpg" class="fadeSmoothH" alt="foto do projeto">
+                <img src="./imgs/fotoKimura.jpg"  alt="foto do projeto">
             </div>
             <div class="item-texto slideRightScroll" id="txt3">
                 <h3>Saúde <span> Mental </span></h3>
@@ -107,7 +110,8 @@
 
         <!-- parallax -->
         <section class="parallax">
-            <span>O que está esperando para começar?<br>Primeira aula gratuita</span>
+            <span>O que está esperando para começar?</span>
+            <span>Primeira aula gratuita</span>
         </section>
 
     </main>
