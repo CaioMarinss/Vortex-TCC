@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imgs/logoQuadrada.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./imgs/logoQuadradaRemovedBg.png" type="image/x-icon">
     <!-- lib de animação -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaQuery.css">
@@ -39,10 +41,6 @@
                 <li><a href="./html/projetoSocial.html">Projeto Social</a></li>
             </ul>
         </nav>
-        <section id="quemSomos">
-            <h2>Quem somos?</h2>
-            <p></p>
-        </section>
         <!-- Marquee -->
         <section id="marquee">
             <div class="marqueeText fadeoutHorizontal">
@@ -65,13 +63,20 @@
                 </div>
             </div>
         </section>
+        <!-- Quem somos -->
+        <section id="quemSomos">
+            <h2>Quem somos?</h2>
+            
+            <p></p>
+        </section>
 
+        <!-- beneficios -->
         <section id="beneficios">
 
             <h2>Benefícios</h2>
             <!-- primeira linha do grid -->
             <div class="item-projeto slideLeftScroll" id="item1">
-                <img src="./imgs/jiuIsLife.jpg"  alt="foto do projeto">
+                <img src="./imgs/jiuIsLife.png"  alt="foto do projeto">
             </div>
             <div class="item-texto slideRightScroll" id="txt1">
                 <h3>Por que o <span>Jiu-Jitsu</span>?</h3>
@@ -83,7 +88,7 @@
 
             <!-- segunda linha do grid -->
             <div class="item-projeto slideRightScroll" id="item2">
-                <img src="./imgs/perseveranca.jpg"  alt="foto do projeto">
+                <img src="./imgs/perseveranca.png"  alt="foto do projeto">
             </div>
 
             <div class="item-texto slideLeftScroll" id="txt2">
@@ -96,7 +101,7 @@
 
             <!-- terceira linha do grid -->
             <div class="item-projeto slideLeftScroll" id="item3">
-                <img src="./imgs/fotoKimura.jpg"  alt="foto do projeto">
+                <img src="./imgs/fotoKimura.png" class="quina" alt="foto do projeto">
             </div>
             <div class="item-texto slideRightScroll" id="txt3">
                 <h3>Saúde <span> Mental </span></h3>
@@ -163,12 +168,28 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        
     </footer>
 
 
+    <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
     <script src="./js/main.js"></script>
+    <!-- acessibilidade -->
+    <script src="https://cdn.jsdelivr.net/gh/PrabothCharith/accessibility-plugin@main/accessibility-menu.min.js"></script>
 
+        <!-- vlibras  -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
 </body>
 
 </html>

@@ -184,13 +184,16 @@ nav {
         overflow: hidden;
         margin: auto 0;
         text-align: center;
-
+        display: flex;
+        align-items: center;
+        height: 95%;
         img {
-            height: 80%;
+            position: relative;
+            height: 90%;
             max-width: 100%;
             object-fit: cover;
-        }
-
+            margin: 0 auto;
+        }    
     }
 
     .item-texto {
@@ -249,7 +252,7 @@ nav {
     flex-direction: column;    
     align-items: center;
     justify-content: center;
-    height: 55vh;
+    height: 65vh;
 
     background-image: url('../imgs/parallax.jpg');
     background-attachment: fixed;
@@ -339,6 +342,7 @@ footer {
             color: var(--bgAlmeida);
         }
     }
+    
 }
 
 /* google maps */
