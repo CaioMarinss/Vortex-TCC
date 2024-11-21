@@ -198,7 +198,7 @@ p{
     }
 
     .box {
-        width: 60%;
+        width: 55%;
     }
 
     /* desfazendo grid beneficios */
@@ -210,12 +210,11 @@ p{
             
         }
     }
-}
-/* desfazendo grid fundador */
-#fundador{
-    display: flex;
-    flex-direction: column-reverse;
-    #Luizao img{
+    /* desfazendo grid fundador */
+    #fundador{
+        display: flex;
+        flex-direction: column-reverse;
+        
     }
 }
 
@@ -250,10 +249,16 @@ p{
             }
         }
     }
+    .box {
+        width: 80%;
+    }
 }
 
 @media (max-width: 500px) {
     #aulas .wrapper .box-area .box .overlay h3{
         margin-top: 50%;
+    }
+    h2{
+        font-size: 3rem;
     }
 }
