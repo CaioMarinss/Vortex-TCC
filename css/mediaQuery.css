@@ -211,13 +211,18 @@
 
     /* desfazendo grid beneficios */
     #beneficios {
-        display: block;
+        display: block;        
 
         .item-projeto {
             height: max-content;
             margin: 10% auto;
+            animation: none;
 
         }
+        .item-texto{
+            animation: none;
+        }
+
     }
 
     /* desfazendo grid fundador */

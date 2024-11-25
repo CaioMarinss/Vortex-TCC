@@ -185,9 +185,10 @@ nav {
     ;
     margin: 0 auto 5vh;
     align-items: center;
+    overflow-x: hidden;
 
     .item-projeto {
-        overflow: hidden;
+        overflow-x: hidden;
         margin: auto 0;
         text-align: center;
         display: flex;
