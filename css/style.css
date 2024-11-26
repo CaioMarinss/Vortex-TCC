@@ -175,6 +175,7 @@ nav {
 #beneficios {
     display: grid;
     width: 80%;
+    gap:  0px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto repeat(3, 60vh);
     grid-template-areas:
@@ -185,10 +186,9 @@ nav {
     ;
     margin: 0 auto 5vh;
     align-items: center;
-    overflow-x: hidden;
 
     .item-projeto {
-        overflow-x: hidden;
+        overflow: hidden;
         margin: auto 0;
         text-align: center;
         display: flex;
