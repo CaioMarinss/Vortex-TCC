@@ -1,0 +1,51 @@
+
+#frase1 {
+    width: 70%;
+
+    span {
+        align-self: end;
+    }
+}
+
+.donoFrase {
+    text-align: end;
+    color: var(--bgSombra);
+}
+
+#fundador {
+    #infoLuizao {
+        p {
+            margin: 5% auto;
+        }
+    }
+}
+
+#quemSomos{
+    margin-top: 10vh;
+}
+/* 
+.swiper {
+    width: 50%;
+    height: 50%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+} */

@@ -84,7 +84,7 @@ h3 {
     }
 }
 
-#alunosPB {
+#alunosPB, #fotoProjeto {
     width: 98%;
     max-height: 88vh;
     object-fit: cover;
