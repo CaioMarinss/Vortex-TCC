@@ -179,7 +179,8 @@
 
     /* texto parallax */
     .parallax {
-        background-attachment: scroll;
+        background-attachment: fixed;
+
         span {
             font-size: 25px;
             margin: 0 5%;
@@ -188,7 +189,8 @@
 
 
     /* desfazendo grid cards */
-     .item-texto, .item-projeto {
+    .item-texto,
+    .item-projeto {
         animation: none;
     }
 
@@ -265,9 +267,27 @@
     .box {
         width: 80%;
     }
+
+    /* formulario */
+    .screen-body {
+        padding: 0;
+    }
+
+    .screen-body-item {
+        padding: 0;
+    }
+
+    .screen-body-item.left {
+        padding-right: 0;
+        padding-left: 0;
+        align-items: center;
+    }
+    .app-title {
+        width: 100%;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     #aulas .wrapper .box-area .box .overlay h3 {
         margin-top: 50%;
     }
@@ -275,4 +295,38 @@
     h2 {
         font-size: 3rem;
     }
+
+#queroAjudar{
+    padding: 10%;
+}
+
+    /* formulario */
+    .screen-body {
+        flex-direction: column;
+    }
+
+    .screen-body-item.left {
+        padding: 0;
+        align-items: center;
+    }
+
+
+    .app-title {
+        flex-direction: row;
+        padding-top: 5%;
+        width: 80%;
+    }
+
+    .app-title span {
+        margin-right: 0px;
+    }
+
+    .app-title:after {
+        display: none;
+    }
+
+    .app-contact {
+text-align: left;    }
+
+
 }

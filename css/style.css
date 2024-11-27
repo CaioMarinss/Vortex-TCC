@@ -249,7 +249,7 @@ nav {
 
 /* ======================= */
 /* section quem somos */
-#quemSomos {
+#quemSomos, #porQue {
     width: 100%;
     display: flex;
     align-items: center;
@@ -368,7 +368,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 65vh;
+    height: 85vh;
 
     background-image: url('../imgs/parallax.jpg');
     background-attachment: fixed;

@@ -1,4 +1,12 @@
-
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root {
+    --amareloJJ: #F2CC0F;
+    --bgAlmeida: #000;
+    --bgSombra: #8d8c8c;
+}
 #frase1 {
     width: 70%;
 
@@ -20,9 +28,12 @@
     }
 }
 
-#quemSomos{
+#porQue{
     margin-top: 10vh;
 }
+
+
+
 /* 
 .swiper {
     width: 50%;
@@ -49,3 +60,117 @@
     margin-left: auto;
     margin-right: auto;
 } */
+
+
+
+  #queroAjudar{
+    height: 100vh;
+    background-image: url('../imgs/parallaxProjeto.jpeg') ;
+
+  }
+
+  
+  .screen {
+    position: relative;
+    background: #333333;
+    border-radius: 15px;
+  }
+  
+
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #logoForm{
+
+        width: 70%;
+
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    margin: 10px auto;
+    width: 25px;
+    height: 4px;
+    background: var(--amareloJJ);
+
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 10px;
+    color: #888;
+    text-transform: uppercase;
+
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+    text-transform: uppercase;
+
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: var(--amareloJJ);
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: var(--amareloJJ);
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 2%;
+  }
+  
+  .app-form-button:hover {
+    transition: transform .2s;
+    transform: scale(1.2);
+  }
+  
+
