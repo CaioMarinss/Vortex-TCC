@@ -79,6 +79,7 @@
 
   .screen-body {
     display: flex;
+    padding: 5% 0;
   }
   
   .screen-body-item {

@@ -105,6 +105,10 @@
     .grid-2 {
         display: flex;
     }
+    /*ajustando tamanho de imagem */
+    #familia {
+        width: 80%;
+    }
 
     /* arrumando nav */
     nav {
@@ -179,7 +183,7 @@
 
     /* texto parallax */
     .parallax {
-        background-attachment: fixed;
+        background-attachment: scroll;
 
         span {
             font-size: 25px;
@@ -220,6 +224,11 @@
             margin: 10% auto;
 
         }
+    }
+
+    /* formulario projeto social */
+    .screen-body {
+        padding: 0 0;
     }
 
     /* desfazendo grid fundador */
