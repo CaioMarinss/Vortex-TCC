@@ -91,43 +91,50 @@
 
         <!-- parallax com formulario fundo transparemte -->
         <section class="parallax" id="queroAjudar">
-            
-                <div class="container">
-                    <div class="screen">
-                        
-                        <div class="screen-body">
-                            <div class="screen-body-item left">
-                                <div class="app-title">
-                                    <span>Quero ajudar!</span>
-                                </div>
-                                <img src="../imgs/logoRetangularRemovedBG.png" id="logoForm" alt="logo almeida">
-                                <div class="app-contact">Informações : +55 11 94692-9648</div>
+
+            <div class="container">
+                <div class="screen">
+
+                    <div class="screen-body">
+                        <div class="screen-body-item left">
+                            <div class="app-title">
+                                <span>Quero ajudar!</span>
                             </div>
-                            <div class="screen-body-item">
-                                <div class="app-form">
+                            <img src="../imgs/logoRetangularRemovedBG.png" id="logoForm" alt="logo almeida">
+                            <div class="app-contact">Informações : +55 11 94692-9648</div>
+                        </div>
+                        <div class="screen-body-item">
+                            <div class="app-form">
+                                <form action="https://formsubmit.co/marinsroyale@gmail.com" method="POST">
+
                                     <div class="app-form-group">
-                                        <input class="app-form-control" placeholder="nome completo" style="text-transform: capitalize;">
+                                        <input class="app-form-control" name="name" placeholder="nome completo" required
+                                            style="text-transform: capitalize;">
                                     </div>
                                     <div class="app-form-group">
-                                        <input class="app-form-control" placeholder="email">
+                                        <input class="app-form-control" name="email" placeholder="email" required>
                                     </div>
                                     <div class="app-form-group">
-                                        <input class="app-form-control" placeholder="seu número">
+                                        <input class="app-form-control" name="number" placeholder="seu número" required>
                                     </div>
                                     <div class="app-form-group message">
-                                        <input class="app-form-control" placeholder="mensagem">
+                                        <input class="app-form-control"  name="message" placeholder="mensagem" required>
                                     </div>
                                     <div class="app-form-group buttons">
                                         <button class="app-form-button">CANCELAR</button>
                                         <button class="app-form-button">ENVIAR</button>
                                     </div>
-                                </div>
+                                    <input type="hidden" name="_subject" value="Novo Contato!">
+                                    <input type="text" name="_honey" style="display: none;">
+                                    <input type="hidden" name="_captcha" value="false">
+                                </form>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-            
+
+            </div>
+
 
         </section>
 
