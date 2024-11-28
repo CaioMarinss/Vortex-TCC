@@ -27,6 +27,19 @@ function formatPhone(input) {
     }
 }
 
+const navbar = document.getElementById("navbar");
 
+        // nav ta encostando no topo?
+        function checkIfElementAtTop() {
+            const rect = navbar.getBoundingClientRect(); // Pega a posição do elemento
 
-// swiper js
+            
+            if (rect.top <= 0) {
+                navbar.style.backgroundColor='black'
+            } 
+            else{
+                navbar.style.backgroundColor=''
+
+            }
+        }
+        window.onscroll = checkIfElementAtTop;

@@ -10,7 +10,7 @@
 :root {
     --amareloJJ: #F2CC0F;
     --bgAlmeida: #000;
-    --bgSombra: #8d8c8c;
+    --bgSombra: #333333;
 }
 ::-webkit-scrollbar {
     width: 10px; /* Largura da barra de rolagem */
@@ -48,44 +48,87 @@ h3 {
 
 }
 
+
 /* primeira tela */
-#apresentacao, #projetoSocial {
-    grid-template-rows: 93vh;
-    gap: 25px;
+
+
+.header {
+    position: relative;
+    height: 100%;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    color: #fff;
+    background-image: url(../imgs/alunosPB.JPEG);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
     width: 100%;
+    background-image: -webkit-radial-gradient(48% 42%, 140% 110%, rgba(51,51,51, 0.5), rgba(51,51,51, 0.6), rgba(51,51,51, 0.7), rgba(51,51,51, 0.8), rgba(51,51,51, 0.93), #212529 55%, #212529 200%);
+    background-image: radial-gradient(140% 110% at 48% 42%, rgba(51,51,51, 0.5), #21252999, rgba(51,51,51, 0.7), rgba(51,51,51, 0.8), rgba(51,51,51, 0.93), #333333 55%, #212529 200%);
+  }
+  
+  .header .header-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+        transform: translate(-50%, -50%);
+  }
+  
+  .header .header-content .header-title {
+    font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1300 - 300)));
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .header .header-content .header-subtitle {
+    opacity: 1;
+    margin-bottom: 30px;
+  }
+  
+  .header .header-content .btn-theme-color {
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    outline: 0;
+    transition: all, 0.3s;
+    font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: bold;
+    a{
+      color: white;
+    }
+    &:hover{
+      transition: transform .2s;
+      transform: scale(1.2);
+    }
+  }
+  
+
+
+  #almeida{
+    font-size: clamp(3rem, 8vw, 10rem);
+    white-space: nowrap;
     margin: 0 auto;
-    background-color: #000000;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%232F2F2F"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>');
-    background-repeat: no-repeat;
     color: white;
-    overflow: hidden;
-}
-
-.text {
-    align-self: flex-end;
-    margin-bottom: 10vh;
-
-    p {
-        color: var(--bgSombra);
-        animation: fadeInDown 1.5s 2s;
+    font-family: "El Messiri", sans-serif;
+    animation: pulse 2s infinite ease-in-out;
+  
+    span {
+        color: var(--amareloJJ);
+    }}
+  #frase1 {
+    width: 70%;
+  
+    span {
+      align-self: end;
     }
-
-    h1 {
-        font-size: clamp(3rem, 8vw, 10rem);
-        white-space: nowrap;
-        margin: 0 auto;
-        color: white;
-        font-family: "El Messiri", sans-serif;
-        animation: pulse 2s infinite ease-in-out;
-
-        span {
-            color: var(--amareloJJ);
-        }
-    }
-}
+  }
 
 #alunosPB, #fotoProjeto {
     width: 98%;
@@ -107,8 +150,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: rgba(0, 0, 0);
-
+    background-color: var(--bgSombra);
+    transition: background-color 0.5s ease;
     img {
         height: 6vh;
         justify-self: left;
