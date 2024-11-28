@@ -216,6 +216,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 40%;
   gap: 0 20px;
   a {
@@ -224,7 +225,7 @@
     text-transform: uppercase;
     color: var(--amareloJJ);
     font-family: "Oswald", sans-serif;
-    margin: 0 auto;
+    margin: 0 10px;
     &:hover{
       text-decoration: underline;
     }

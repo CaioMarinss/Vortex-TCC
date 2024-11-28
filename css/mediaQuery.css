@@ -33,6 +33,11 @@
 /*============== breakpoint ==============*/
 
 @media (max-width: 1050px) {
+        /* pagina obrigado */
+        .container-links {
+            width: 70%;
+        }
+    
 
     /* card */
     .box-area {
@@ -105,6 +110,7 @@
     .grid-2 {
         display: flex;
     }
+
     /*ajustando tamanho de imagem */
     #familia {
         width: 80%;
@@ -168,6 +174,8 @@
             margin: 0;
         }
     }
+
+
 }
 
 
@@ -256,6 +264,16 @@
 }
 
 @media (max-width: 600px) {
+        /* pagina obrigado */
+        .container-links {
+            flex-direction: column;
+            a{
+                margin: 10px auto;
+            }
+        }
+        .textoObrigado{
+            width: 80%;
+        }
 
     /* mudando imagem da nav */
     nav img {
@@ -291,6 +309,7 @@
         padding-left: 0;
         align-items: center;
     }
+
     .app-title {
         width: 100%;
     }
@@ -305,13 +324,15 @@
         font-size: 3rem;
     }
 
-#queroAjudar{
-    padding: 10%;
-}
+    #queroAjudar {
+        padding: 10%;
+    }
 
     /* formulario */
     .screen-body {
         flex-direction: column;
+        padding: 50px;
+
     }
 
     .screen-body-item.left {
@@ -335,7 +356,8 @@
     }
 
     .app-contact {
-text-align: left;    }
+        text-align: left;
+    }
 
 
 }
