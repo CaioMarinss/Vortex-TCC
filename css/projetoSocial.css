@@ -9,6 +9,8 @@
   --bgSombra: #8d8c8c;
 }
 
+/* section apresentação */
+
 #frase1 {
   width: 70%;
 
@@ -16,6 +18,35 @@
     align-self: end;
   }
 }
+
+#projetoSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 93vh;
+
+  .container-ps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    .text {
+      margin: 0;
+      width: 80%;
+      align-self: center;
+    }
+  }
+
+  #fotoProjeto {
+    width: 60%;
+    align-self: center;
+  }
+}
+
+
+
+/*  section porQue*/
 
 .donoFrase {
   text-align: end;
@@ -35,7 +66,7 @@
 }
 
 
-.marquee-track img{
+.marquee-track img {
   width: 20vw;
   margin: 0 10px;
 }
@@ -196,6 +227,7 @@
   text-align: center;
   width: 40%;
   gap: 0 20px;
+
   a {
     font-size: 1.3rem;
     font-weight: 400;
@@ -203,10 +235,9 @@
     color: var(--amareloJJ);
     font-family: "Oswald", sans-serif;
     margin: 0 10px;
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
     }
   }
 }
-
-

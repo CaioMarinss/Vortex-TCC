@@ -49,7 +49,7 @@ h3 {
 }
 
 /* primeira tela */
-#apresentacao {
+#apresentacao, #projetoSocial {
     grid-template-rows: 93vh;
     gap: 25px;
     text-align: center;
