@@ -115,18 +115,19 @@
                                         <input class="app-form-control" name="email" placeholder="email" required>
                                     </div>
                                     <div class="app-form-group">
-                                        <input class="app-form-control" name="number" placeholder="seu número" required>
+                                        <input class="app-form-control" name="phone" id="phone" placeholder="seu número" oninput="formatPhone(this)" required>
                                     </div>
                                     <div class="app-form-group message">
                                         <input class="app-form-control"  name="message" placeholder="mensagem" required>
                                     </div>
                                     <div class="app-form-group buttons">
-                                        <button class="app-form-button">CANCELAR</button>
-                                        <button class="app-form-button">ENVIAR</button>
+                                        <input type="reset" class="app-form-button" value="CANCELAR"></input>
+                                        <input type="submit" class="app-form-button" value="ENVIAR"></input>
                                     </div>
                                     <input type="hidden" name="_subject" value="Novo Contato!">
                                     <input type="text" name="_honey" style="display: none;">
                                     <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next" value="https://caiomarinss.github.io/climb-TCC/html/obrigado.html">
                                 </form>
                             </div>
                         </div>

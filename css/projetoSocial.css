@@ -1,35 +1,37 @@
-*{
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-:root {
-    --amareloJJ: #F2CC0F;
-    --bgAlmeida: #000;
-    --bgSombra: #8d8c8c;
-}
-#frase1 {
-    width: 70%;
 
-    span {
-        align-self: end;
-    }
+:root {
+  --amareloJJ: #F2CC0F;
+  --bgAlmeida: #000;
+  --bgSombra: #8d8c8c;
+}
+
+#frase1 {
+  width: 70%;
+
+  span {
+    align-self: end;
+  }
 }
 
 .donoFrase {
-    text-align: end;
-    color: var(--bgSombra);
+  text-align: end;
+  color: var(--bgSombra);
 }
 
 #fundador {
-    #infoLuizao {
-        p {
-            margin: 5% auto;
-        }
+  #infoLuizao {
+    p {
+      margin: 5% auto;
     }
+  }
 }
 
-#porQue{
-    margin-top: 10vh;
+#porQue {
+  margin-top: 10vh;
 }
 
 
@@ -63,115 +65,168 @@
 
 
 
-  #queroAjudar{
-    height: 100vh;
-    background-image: url('../imgs/parallaxProjeto.jpeg') ;
+#queroAjudar {
+  height: 100vh;
+  background-image: url('../imgs/parallaxProjeto.jpeg');
 
-  }
+}
 
-  
-  .screen {
-    position: relative;
-    background: #333333;
-    border-radius: 15px;
-  }
-  
 
-  .screen-body {
-    display: flex;
-    padding: 5% 0;
-  }
-  
-  .screen-body-item {
-    flex: 1;
-    padding: 50px;
-  }
-  .screen-body-item.left {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  #logoForm{
+.screen {
+  position: relative;
+  background: #333333;
+  border-radius: 15px;
+}
 
-        width: 70%;
 
-  }
-  
-  .app-title {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    font-size: 26px;
+.screen-body {
+  display: flex;
+  padding: 5% 0;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#logoForm {
+
+  width: 70%;
+
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  margin: 10px auto;
+  width: 25px;
+  height: 4px;
+  background: var(--amareloJJ);
+
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+  text-transform: uppercase;
+
+}
+
+.app-form-control:focus {
+  border-bottom-color: var(--amareloJJ);
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: var(--amareloJJ);
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 2%;
+}
+
+.app-form-button:hover {
+  transition: transform .2s;
+  transform: scale(1.2);
+}
+
+
+/* pagina de obrigado */
+
+#obrigado {
+  height: 93vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-foto {
+  height: 30%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#fotoObrigado {
+  height: 100%;
+}
+
+.textoObrigado {
+  width: 50%;
+  text-align: center;
+  margin: 4vh auto;
+}
+
+#fraseObrigado {
+  color: var(--bgSombra);
+  font-size: 2rem;
+}
+
+.container-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  gap: 0 20px;
+  a {
+    font-size: 1.3rem;
+    font-weight: 400;
     text-transform: uppercase;
-  }
-  
-  .app-title:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    margin: 10px auto;
-    width: 25px;
-    height: 4px;
-    background: var(--amareloJJ);
-
-  }
-  
-  .app-contact {
-    margin-top: auto;
-    font-size: 10px;
-    color: #888;
-    text-transform: uppercase;
-
-  }
-  
-  .app-form-group {
-    margin-bottom: 15px;
-  }
-  
-  .app-form-group.message {
-    margin-top: 40px;
-  }
-  
-  .app-form-group.buttons {
-    text-align: right;
-  }
-  
-  .app-form-control {
-    width: 100%;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #666;
-    color: #ddd;
-    font-size: 14px;
-    outline: none;
-    transition: border-color .2s;
-  }
-  
-  .app-form-control::placeholder {
-    color: #666;
-    text-transform: uppercase;
-
-  }
-  
-  .app-form-control:focus {
-    border-bottom-color: var(--amareloJJ);
-  }
-  
-  .app-form-button {
-    background: none;
-    border: none;
     color: var(--amareloJJ);
-    font-size: 14px;
-    cursor: pointer;
-    margin: 0 2%;
+    font-family: "Oswald", sans-serif;
+    margin: 0 auto;
+    &:hover{
+      text-decoration: underline;
+    }
   }
-  
-  .app-form-button:hover {
-    transition: transform .2s;
-    transform: scale(1.2);
-  }
-  
-
+}
