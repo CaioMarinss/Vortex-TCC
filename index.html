@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="./css/mediaQuery.css">
     <title>Almeida JJ Tucuruvi</title>
 </head>
-
 <body>
     <div id="intro">
         <img src="./imgs/logoQuadradaRemovedBg.png" alt="logo" style="width: 200px;">
     </div>
-    <header id="home">
+    <header id="home" class="header">
         <!-- primeiro bloco do -->
-        <header class="header">
             <div class="overlay"></div>
             <div class="header-content">
                 <p class="header-title">Pronto para mudar sua vida?</p>
@@ -28,7 +26,7 @@
                 <button class="btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> <a href="https://wa.me/5511946929648" target="_blank">Agendar Aula</a></button>
     
             </div>
-        </header><!-- end of page header -->
+<!-- end of page header -->
     </header>
     <main>
         <!-- nav -->
@@ -40,6 +38,8 @@
                 <li><a href="./html/projetoSocial.html">Projeto Social</a></li>
             </ul>
         </nav>
+        <!-- scroll up -->
+            <a class="back-to-top" href="#home"></a>
         <!-- Marquee -->
         <section id="marquee">
             <div class="marqueeText fadeoutHorizontal">
@@ -105,14 +105,16 @@
 
         </section>
 
-        <section id="quemSomos" class="slideInUpScroll">
+        <section id="quemSomos">
             <h2>Quem somos?</h2>
-            <div class="quemSomosText">
-                <p>A melhor equipe de jiu jitsu de São Paulo, tem o compromisso em te ajudar a alcançar os seus
-                    objetivos
-                    como esportista, mas principalmente como pessoa. Corpo e mente saudável, fica muito mais fácil de
-                    contornar todas as adversidades do dia a dia. Marque uma
-                    aula experimental gratuita, e conheça essa arte marcial maravilhosa que muda vidas!</p>
+            <div class="quemSomosText" >
+                <p>Nossa história começa em 2021, durante a pandemia da Covid-19. 
+                    Época que era mal visto sair de casa e ter contato com outras pessoas, 
+                    movidos pela paixão ao esporte e tomando os devidos cuidados, começamos a 
+                    organizar treinos em uma pequena garagem, cedida por um 
+                    dos alunos. A partir desse ponto, a academia, que mais se assemelhava a uma família, foi 
+                    ficando cada vez maior, sem perder a essência, e hoje tem um espaço grande
+                    e bem localizado no Tucuruvi.</p>
             </div>
             <img src="./imgs/familia.png" id="familia" alt="Foto do Grupo inteiro">
             <div id="fundador" class="grid-2">
@@ -134,21 +136,21 @@
                     <div class="box-area">
                         <div class="box zoomInScroll">
                             <img alt="adultos lutando" src="./imgs/aulaAdultos.jpg">
-                            <div class="overlay">
+                            <div class="overlayCard">
                                 <h3>Aula Adultos</h3>
                                 <p>Sem limite de idade</p>
                             </div>
                         </div>
                         <div class="box zoomInScroll">
                             <img alt="foto com alunos kids" src="./imgs/aulaKids.jpeg">
-                            <div class="overlay">
+                            <div class="overlayCard">
                                 <h3>Aula Kids</h3>
                                 <p>A partir de 6 anos.</p>
                             </div>
                         </div>
                         <div class="box zoomInScroll">
                             <img alt="foto professor vendo a luta" src="./imgs/curso.png">
-                            <div class="overlay">
+                            <div class="overlayCard">
                                 <h3>Curso</h3>
                                 <p>Para professores Kids e Intro Class.</p>
                             </div>

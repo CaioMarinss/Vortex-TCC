@@ -263,7 +263,10 @@
     #fundador {
         display: flex;
         flex-direction: column-reverse;
-
+        #Luizao img{
+            width: 60%;
+        }
+        
     }
 
     /* marquee projeto social */

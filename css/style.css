@@ -60,6 +60,7 @@ h3 {
     background-image: url(../imgs/alunosPB.JPEG);
     background-size: cover;
     background-position: center;
+    z-index: 97;
   }
   
   .header .overlay {
@@ -179,6 +180,20 @@ nav {
     }
 }
 
+/* botao back to top */
+.back-to-top {
+    background-color: var(--amareloJJ);
+    border-radius: 65px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    content: url('../imgs/arrow.png');
+  }
+
 /* ======================= */
 /* marquee */
 #marquee {
@@ -292,7 +307,10 @@ nav {
 
 }
 
+body{
+    overflow-x: hidden;
 
+}
 /* ======================= */
 /* section quem somos */
 #quemSomos, #porQue {
@@ -312,18 +330,20 @@ nav {
     text-align: center;
     width: 50%;
     margin: 5vh auto;
+    
 }
 
 #fundador {
     margin: 10vh auto 0;
     width: 70%;
-    overflow-x: hidden;
+    text-align: center;
 
     #infoLuizao {
         margin: 0 auto;
         text-align: center;
         width: 90%;
         h2{
+            font-size: 2.5rem;
             margin-bottom: 5%;
         }
 
@@ -372,7 +392,7 @@ nav {
     display: block;
     transition: transform 0.5s;
 }
-.overlay {
+.overlayCard {
 	width: 100%;
 	height: 0;
 	background: linear-gradient(transparent ,#c5c5c5 100%);
@@ -389,7 +409,7 @@ nav {
     text-align: center;
 	transition: height 0.5s;
 }
-.overlay h3 {
+.overlayCard h3 {
 	font-weight: 500;
 	margin-bottom: 5px;
 	margin-top: 70%;
@@ -400,7 +420,7 @@ nav {
     transform: scale(1.1);
     
 }
-.box:hover .overlay{
+.box:hover .overlayCard{
     height: 100%;
 }
 
@@ -605,12 +625,16 @@ a {
     animation: slideInRight;
     animation-timeline: view();
     animation-range: cover -50vh cover 50%;
-
 }
 
 .zoomInScroll{
     animation: zoomIn;
     animation-timeline: view();
     animation-range: cover -40vh cover 65%;
+}
 
+.fadeInScroll{
+    animation: fadeIn;
+    animation-timeline: view();
+    animation-range: cover -10vh cover 45%;
 }
