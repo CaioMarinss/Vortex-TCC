@@ -115,7 +115,8 @@
 
                                     <div class="app-form-group">
                                         <input class="app-form-control" name="name" placeholder="nome completo" required
-                                            style="text-transform: capitalize;">
+                                            style="text-transform: capitalize; " oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')"      ">
+                                            
                                     </div>
                                     <div class="app-form-group">
                                         <input class="app-form-control" name="email" placeholder="email" required>

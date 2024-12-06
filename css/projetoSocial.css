@@ -10,7 +10,7 @@
 }
 
 /* section apresentação */
-.header{
+.header {
   background-image: url(../imgs/parallaxProjeto.jpeg);
 }
 
@@ -27,6 +27,7 @@
     flex-direction: column;
     justify-content: center;
     width: 80%;
+
     .text {
       margin: 0;
       width: 80%;
@@ -134,6 +135,14 @@
 
 }
 
+.app-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #333 inset;
+}
+input:-webkit-autofill::first-line{
+  color: white !important;  
+}
+
+
 .app-form-group {
   margin-bottom: 15px;
 }
@@ -156,6 +165,7 @@
   font-size: 14px;
   outline: none;
   transition: border-color .2s;
+  
 }
 
 .app-form-control::placeholder {
@@ -237,4 +247,3 @@
     }
   }
 }
-

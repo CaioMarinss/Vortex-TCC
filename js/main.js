@@ -13,7 +13,8 @@ window.onload = function () {
 };
 
 let input = document.querySelector('#phone')
-// formatar input de telefone
+let inputName = document.querySelector('#name')
+// formatar input de telefone e nome
 function formatPhone(input) {
     let value = input.value.replace(/\D/g, ''); // Remove tudo o que não for número
 
@@ -25,7 +26,7 @@ function formatPhone(input) {
     } else {
         input.value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
     }
-}
+}  
 
 const navbar = document.getElementById("navbar");
 
