@@ -222,7 +222,7 @@ input:-webkit-autofill::first-line{
 }
 
 #fraseObrigado {
-  color: var(--bgSombra);
+  color: white;
   font-size: 2rem;
 }
 
