@@ -169,7 +169,7 @@ input:-webkit-autofill::first-line{
 }
 
 .app-form-control::placeholder {
-  color: #666;
+  color: #a8a8a8;
   text-transform: uppercase;
 
 }
