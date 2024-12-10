@@ -235,7 +235,7 @@
         margin: 0 auto;
     }
 
-    .box:not(:hover) .overlay {
+    .box:not(:hover) .overlayCard {
         height: 80%;
     }
 
