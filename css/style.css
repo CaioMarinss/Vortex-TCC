@@ -93,7 +93,7 @@ h3 {
   .header .header-content .btn-theme-color {
     padding: 8px 20px;
     border-radius: 30px;
-    border: 2px solid #fff;
+    border: 2px solid white;
     color: #fff;
     background: transparent;
     outline: 0;
@@ -305,10 +305,11 @@ nav {
 
 
 }
-
-body, html{
+main{
+    overflow-x: visible;
+}
+body{
     overflow-x: hidden;
-
 }
 /* ======================= */
 /* section quem somos */
